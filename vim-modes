@@ -1,7 +1,8 @@
+cd ~
 mkdir -p .vim/autoload
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 mkdir -p .vim/bundle
-cd bundle
+cd .vim/bundle
 git clone https://github.com/tpope/vim-sensible.git
 git clone https://github.com/elzr/vim-json.git
 git clone https://github.com/hashivim/vim-terraform.git
