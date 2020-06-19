@@ -1,13 +1,12 @@
 # Git alias initialization
-# Copyright (C) 2019 by Dmitri Fedorov
+# Copyright (C) 2020 by Dmitri Fedorov
 
-git config --global user.name "Dmitri Fedorov"
-git config --global user.email "me@domain.com"
-git config --global push.default simple
 git config --global alias.co checkout
-git config --global alias.b branch
-git config --global alias.c commit
-git config --global alias.csm '!f() { git commit -sS -m "$*"; }; f'
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.df 'diff --color-words'
+git config --global alias.dc 'diff --cached'
+git config --global alias.csm '!f() { git commit -S -m "$*"; }; f'
 git config --global alias.st status
 git config --global alias.stage 'add -A'
 git config --global alias.unstage 'reset HEAD --'
@@ -15,5 +14,8 @@ git config --global alias.last 'log -1 HEAD'
 git config --global alias.visual '!gitk'
 git config --global alias.ls 'log --oneline --decorate'
 git config --global alias.ll 'log --oneline --decorate --graph --all'
-git config --global alias.r 'remote -v'
+git config --global alias.lg 'log -p'
+git config --global alias.who 'shortlog -s --'
+git config --global alias.rv 'remote -v'
+
 GIT_TRACE=1 git config --list
