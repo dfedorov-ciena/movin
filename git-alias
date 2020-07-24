@@ -1,6 +1,11 @@
 # Git alias initialization
 # Copyright (C) 2020 by Dmitri Fedorov
 
+#user.name=Dmitri Fedorov
+#user.email=34586085+dfedorov-ciena@users.noreply.github.com
+#git config --global user.signingkey CHANGEME
+#git config --global commit.gpgsign true
+
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
@@ -17,5 +22,6 @@ git config --global alias.ll 'log --oneline --decorate --graph --all'
 git config --global alias.lg 'log -p'
 git config --global alias.who 'shortlog -s --'
 git config --global alias.rv 'remote -v'
+git config --global alias.up=!git remote update -p; git merge --ff-only @{u}
 
 GIT_TRACE=1 git config --list

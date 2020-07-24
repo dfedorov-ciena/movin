@@ -1,10 +1,10 @@
 cd ~
 mkdir -p .vim/autoload
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+curl -kLSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 mkdir -p .vim/bundle
 cd .vim/bundle
-git clone https://github.com/tpope/vim-sensible.git
-git clone https://github.com/elzr/vim-json.git
-git clone https://github.com/hashivim/vim-terraform.git
-git clone git://github.com/tpope/vim-commentary.git
-git clone --recursive https://github.com/python-mode/python-mode.git
+GIT_SSL_NO_VERIFY=1 git clone https://github.com/tpope/vim-sensible.git
+GIT_SSL_NO_VERIFY=1 git clone https://github.com/elzr/vim-json.git
+GIT_SSL_NO_VERIFY=1 git clone https://github.com/hashivim/vim-terraform.git
+GIT_SSL_NO_VERIFY=1 git clone git://github.com/tpope/vim-commentary.git
+GIT_SSL_NO_VERIFY=1 git clone --recursive https://github.com/python-mode/python-mode.git
